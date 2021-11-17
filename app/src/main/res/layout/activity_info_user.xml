@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoUserActivity">
+
+
+    <TextView
+        android:id="@+id/Zagolovok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Информация о пользователе!"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/fioUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Инфо"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/phoneUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Инфо"
+        android:layout_marginTop="10sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp"
+        >
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Редактировать"
+            android:layout_marginHorizontal="10px"
+            />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Удалить"
+            android:layout_marginHorizontal="10px"
+            />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Назад"
+            android:layout_marginHorizontal="10px"
+            />
+    </LinearLayout>
+</LinearLayout>
