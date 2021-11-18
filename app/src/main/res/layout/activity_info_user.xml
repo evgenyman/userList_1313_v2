@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:hint="Инфо"
         android:layout_marginTop="10sp"
+        android:textSize="20sp"
         />
 
     <TextView
@@ -30,6 +31,7 @@
         android:layout_height="wrap_content"
         android:hint="Инфо"
         android:layout_marginTop="10sp"
+        android:textSize="20sp"
         />
 
     <LinearLayout

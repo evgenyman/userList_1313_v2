@@ -2,6 +2,7 @@ package com.example.userList_1313_v2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +28,15 @@ public class InfoUserActivity extends AppCompatActivity {
         editBtn = findViewById(R.id.editBtn);
         deleteBtn = findViewById(R.id.deleteBtn);
         backBtn = findViewById(R.id.backBtn);
+
+        editBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(InfoUserActivity.this, AddUserActivity.class);
+                intent.putExtra("userPosition", userPosition);
+                startActivity(intent);
+            }
+        });
 
         deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
